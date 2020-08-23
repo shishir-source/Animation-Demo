@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="SearchDetailsCell" customModule="AnimationTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="542" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="542" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-WS-ueE">
+                        <rect key="frame" x="5" y="10" width="532" height="225"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guitar" translatesAutoresizingMaskIntoConstraints="NO" id="VgY-Mu-z7B">
+                                <rect key="frame" x="0.0" y="0.0" width="254.5" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VgY-Mu-z7B" secondAttribute="height" multiplier="232:205" id="JoY-dT-fxS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tur-Ss-nOG">
+                                <rect key="frame" x="269.5" y="45.5" width="247.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jammu And Kashmir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-Lh-FpX">
+                                <rect key="frame" x="269.5" y="15" width="247.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="800USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziu-Ot-fc3">
+                                <rect key="frame" x="434" y="181" width="83" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.44289536260000001" green="0.0" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VgY-Mu-z7B" firstAttribute="top" secondItem="gpx-WS-ueE" secondAttribute="top" id="0BI-C3-wlD"/>
+                            <constraint firstAttribute="bottom" secondItem="VgY-Mu-z7B" secondAttribute="bottom" id="205-uV-Mq5"/>
+                            <constraint firstItem="NGC-Lh-FpX" firstAttribute="top" secondItem="gpx-WS-ueE" secondAttribute="top" constant="15" id="8td-OU-4ps"/>
+                            <constraint firstAttribute="trailing" secondItem="NGC-Lh-FpX" secondAttribute="trailing" constant="15" id="ICu-Mr-9jL"/>
+                            <constraint firstItem="Tur-Ss-nOG" firstAttribute="top" secondItem="NGC-Lh-FpX" secondAttribute="bottom" constant="10" id="TGJ-nW-oDw"/>
+                            <constraint firstAttribute="trailing" secondItem="Tur-Ss-nOG" secondAttribute="trailing" constant="15" id="Txm-3f-rcy"/>
+                            <constraint firstItem="Tur-Ss-nOG" firstAttribute="leading" secondItem="VgY-Mu-z7B" secondAttribute="trailing" constant="15" id="VdR-HT-gh3"/>
+                            <constraint firstItem="VgY-Mu-z7B" firstAttribute="leading" secondItem="gpx-WS-ueE" secondAttribute="leading" id="ZBy-Dh-D9b"/>
+                            <constraint firstAttribute="bottom" secondItem="VgY-Mu-z7B" secondAttribute="bottom" id="deO-h2-ixQ"/>
+                            <constraint firstItem="VgY-Mu-z7B" firstAttribute="leading" secondItem="gpx-WS-ueE" secondAttribute="leading" id="f8L-1m-Flu"/>
+                            <constraint firstAttribute="trailing" secondItem="ziu-Ot-fc3" secondAttribute="trailing" constant="15" id="mMz-fa-Hcf"/>
+                            <constraint firstAttribute="bottom" secondItem="ziu-Ot-fc3" secondAttribute="bottom" constant="20" id="o2R-8z-Dhh"/>
+                            <constraint firstItem="VgY-Mu-z7B" firstAttribute="top" secondItem="gpx-WS-ueE" secondAttribute="top" id="twB-Gl-HVO"/>
+                            <constraint firstItem="NGC-Lh-FpX" firstAttribute="leading" secondItem="VgY-Mu-z7B" secondAttribute="trailing" constant="15" id="ytb-c0-v1h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gpx-WS-ueE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3KL-pU-KyX"/>
+                    <constraint firstAttribute="bottom" secondItem="gpx-WS-ueE" secondAttribute="bottom" constant="10" id="83w-pY-Odp"/>
+                    <constraint firstAttribute="trailing" secondItem="gpx-WS-ueE" secondAttribute="trailing" constant="5" id="Cvg-Pt-jb5"/>
+                    <constraint firstItem="gpx-WS-ueE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="aA7-Rf-Y3p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="gpx-WS-ueE" id="hFn-5a-KQU"/>
+                <outlet property="imagView" destination="VgY-Mu-z7B" id="E28-g9-gTv"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="guitar" width="1600" height="1067"/>
+    </resources>
+</document>
